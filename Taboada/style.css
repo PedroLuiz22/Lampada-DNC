@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(48, 48, 48);
+    color: rgb(211, 195, 174);
+    text-align: center;
+}
+header img {
+    display: flex;
+    justify-content:space-between;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #principal {
+            background-color: aqua;
+            text-align: center;
+            padding: 100px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+        Minha div
+    </div>
+    <script>
+        function clicar(){
+            principal.style.background = 'yellow'
+            principal.innerText = 'CLICOU'
+        }
+        function entrou(){
+            principal.style.background = 'white'
+            principal.innerText = 'ENTROU'
+        }
+        function saiu(){
+            principal.style.background = 'orange'
+            principal.innerText = 'SAIU'
+        }
+    </script>
+</body>
+</html>
