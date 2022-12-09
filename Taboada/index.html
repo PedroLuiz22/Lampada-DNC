@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taboada</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <img src="./thumb_prov_site.webp" alt="logo DNC" width="100" >
-        <h1>Taboada</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            <p>Qual taboada você deseja saber?<br>
-                <input type="number"> 
+            <p>Qual tabuada você deseja saber?<br>
+                <input type="number" class="form" id="num">  
             </p>
             <p>
                 Até qual número?<br>
-                <input type="number">
+                <input type="number" class="form" id="end">
             </p>
-            <button>Calcular</button>
+            <input type="button" value="Calcular" id="botão" onclick="tabuada()">
         </div>
         <div id="resposta">
-            Preencha todos os campos 
+            Preencha todos os campos.
         </div>
     </section>
+    <script src="tabuada.js"></script>
 </body>
 </html>
